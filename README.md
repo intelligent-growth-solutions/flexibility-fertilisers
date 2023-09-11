@@ -19,6 +19,11 @@ C4Context
         System(travelAgentSystem, "Travel Agent", "Retrieves information about the travel agent")
     } 
 
+    Enterprise_Boundary(RoadWarriorBoundary, "RoadWarrior") {
+
+        System(RoadWarrior, "RoadWarrior", "Allows customers to view, amend and cancel their travel bookings")
+    }
+
     Enterprise_Boundary(dataCustomerBoundary, "Data Customer") {
 
         System(dataCustomer, "Data Customer", "Retrieves data from RoadWarrior for money")
@@ -31,10 +36,6 @@ C4Context
         Person_Ext(socialMediaFriend, "Friend", "Friends can see a user's booking information on social media")
     }
 
-    Enterprise_Boundary(RoadWarriorBoundary, "RoadWarrior") {
-
-        System(RoadWarrior, "RoadWarrior", "Allows customers to view, amend and cancel their travel bookings")
-    }
 
     Enterprise_Boundary(travelSystemBoundary, "Travel System") {
 
@@ -51,7 +52,4 @@ C4Context
     Rel(RoadWarrior, travelAgentSystem, "Can call for help")
 
     Rel(RoadWarrior, socialMedia, "Travel bookings can be shared to social media")
-
-    UpdateLayoutConfig($c4ShapeInRow="4", $c4BoundaryInRow="4")
-
 ```
