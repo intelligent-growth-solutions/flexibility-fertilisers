@@ -53,3 +53,24 @@ C4Context
 
     Rel(RoadWarrior, socialMedia, "Travel bookings can be shared to social media")
 ```
+
+
+## Architectural Characteristics
+
+Following the requirements and additional context, we assessed different architectural characteristics that are of main concern to the Road Warrior architecture.
+
+| Characteristic |  Notes |
+|--------|----|
+| Availability | The system has strict downtime requirements of a maximum of 5 minutes a month. This is especially important for parts of the system that handle adding or updating travel details. |
+| Reliability | The system must reliably add and update travel details. Missing updates could negatively impact the user's travel experience and have negative effects on user retention. |
+| Elasticity  | Travel suffers from disruption in which case the system becomes even more important to its users wanting to keep on top of travel updates. In these instances, a surge in demand is expected and the system needs to be able to handle this gracefully without impact to performance.
+| Extensibility | The system integrates with various 3rd party travel and booking systems. Evolving with existing interfaces and adding new ones will be crucial to providing users the best possible set of details about their trips.  |
+| Archivibility ?? | The business model includes income to be derived from analytics run on user data. To make this successful, data needs to be retained, anonymized an made available for use. |
+
+The following are characteristics that where considered relevant to the application but can be addressed through design and common practice.
+
+| Characteristic |  Notes |
+|--------|----|
+| Localization | The application should be available internationally, which helps us support availability through multiple deployment locations. << something here about translation etc>>...    |
+| Installability | The system is accessible through a mobile app and website. To reach as many users as possible the app should be easy to install. This is well supported through different Application stores already.  |
+| Privacy  | The system handles peoples' travel information which is personal and sensitive data. Identifiable data must therefore be kept private while an anonymized version must be accessible to data analyst. |
