@@ -1,4 +1,6 @@
 # flexibility-fertilisers
+A high level view of the various systems and personas involved in interacting with Road Warrior
+![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/45a69004-776c-4852-965a-abd711428279)
 
 
 ```mermaid
