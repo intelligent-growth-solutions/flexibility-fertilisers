@@ -2,10 +2,6 @@
 ![RoadWarriorLogo](image.png)
  
 
-# Table of Contents
-
-
-
  
 # Introduction
 Do you travel frequently? Do you book stays, flights, cars, buses and trains? Are you frustrated by trying to keep track of all of your travel arrangements by sifting through your email and the different travel providers’ apps? 
