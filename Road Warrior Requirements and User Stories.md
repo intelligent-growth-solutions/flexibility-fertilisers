@@ -28,23 +28,37 @@ o	Major travel disruptions such as storms and other large events will cause dram
 # User Stories
 ## Road Warriors
 As a road warrior, I want the app to automatically add travel arrangements to my itinerary from my email
+
 As a road warrior I want to use multiple email accounts so I can track my personal and work travel arrangements in one place.
+
 As a road warrior, I want to add travel arrangements manually if I don’t receive an email or the app misses one
+
 As a road warrior I want my itineraries to be automatically organized into trips so I don’t have to waste time arranging things in the app
+
 As a road warrior I want to view my travel history so I can make sense of the blur of airports and hotels that is my memory
+
 As a road warrior I want to be notified of all changes to my upcoming travel
+
 As a road warrior I want to set my notifications settings so I can decide what I need to be informed of
+
 As a road warrior I want to decide what travel agencies I interact with
+
 As a road warrior I want to chat with the travel agencies so I can easily and comfortably adapt my travel plans as needed
+
 As a road warrior I want to share my itinerary with co-workers and family
+
 ## The Agent
 As a preferred travel agent, I want to be confident that whom I am talking to is the person who arranged travel
+
 As a preferred travel agent I want to use my own customer support system to respond to requests
+
 As a preferred travel agent, I want all of The Road Warrior’s travel information to be available to me while working with them
+
 ## The Data Team
 As a data scientist, I want to run queries against The Road Warrior’s data to find travel trends. For example
 -	What routes are people traveling for key destinations? 
 How often are our customers having their travel disrupted? Where are the most common disruptions? What do people do when their travel is disrupted? How can we monetise this?
+
 # Straw Man Use Cases
 ## Automated Itinerary Discovery
 1.	Alfred books a trip using his work travel agency and receives an email in his work inbox
