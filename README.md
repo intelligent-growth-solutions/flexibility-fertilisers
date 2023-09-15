@@ -49,6 +49,14 @@ From the workflows we identified the following systems that we wanted to explore
 
 This diagram shows the interactions of the various parts of the RoadWarrior system at a very high level. It indicates the flow through the RoadWarrior application rather than define the individual containers which are specified in narrower diagrams below.
 
+## Critical Infrastructure
+We identified that availability, reliability and elasticity are specifically important to the alert system, travel system API and booking system. By ensuring these systems are design to withstand surges, users will be able to received notifications even during times of travel disruptions. 
+
+
+The database technology that will be chosen needs to lend itself to horizontal scaling and distribution, as we require the data to be held in multiple data nodes.
+
+[Link to ADR here]()
+
 ## Next Steps
 While we have tried to keep the scope of the various systems quite narrow, there are a lot of requirements to cover that span a broad spectrum of technologies and engineering practices. There is a lot of front-end work, there asynchronous events to handle, email protocols, data analytics concepts etc.
 
