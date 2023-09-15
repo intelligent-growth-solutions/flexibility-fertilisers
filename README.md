@@ -44,10 +44,10 @@ From the workflows we identified the following systems that we wanted to explore
 - User system - Handles user related information
 - Data analytics system - Handles processing of any user and travel data for data analytics
 
-## Container Diagram
-![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/ae6d85b7-304a-42e9-a51b-f8f65f260ff8)
+## Zooming into Road Warrior
+![](./Misc/2023-09-15-22-55-31.png)
 
-This diagram shows the interactions of the various parts of the RoadWarrior system at a very high level. It indicates the flow through the RoadWarrior application rather than define the individual containers which are specified in narrower diagrams [here](./ContainerView/).
+This diagram shows the interactions of the various parts of the Road Warrior system at a high level. It indicates the flow through the Road Warrior application rather than define the individual containers which are explored individually below:
 
 1. [Booking system](./ContainerView/booking-system.md)
 1. [Alerting](./ContainerView/alerting.md)
