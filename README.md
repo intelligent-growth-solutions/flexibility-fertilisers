@@ -29,13 +29,16 @@ The following are characteristics that where considered relevant to the applicat
 | Privacy  | The system handles peoples' travel information which is personal and sensitive data. Identifiable data must therefore be kept private while an anonymized version must be accessible for data analytics. |
 | Archivibility | The business model includes income to be derived from analytics run on user data. To make this successful, data needs to be retained and available to use for report creation. |
 
+## Architecture Style
+
+
 ## Workflows
 
 To identify the main components of the Road Warrior system, we looked at some of the workflows it needs to support.
 
 ![Workflowsv2](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bc57a4cf-f925-473d-a336-7df2581d0551)
 
-From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we intestigate how the systems fit together and learn more about the use cases. 
+From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we investigate how the systems fit together and learn more about the use cases. 
 
 - Booking system - Handles users bookings and trips
 - Travel system - Handles the communication with the various external travel and booking systems
