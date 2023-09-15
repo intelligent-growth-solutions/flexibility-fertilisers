@@ -102,6 +102,6 @@ To identify the main components of the Road Warrior, we looked at the main workf
     - Change is propagated to data analytics
 
 ## Container Diagram
-![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/2c509755-ec2b-415f-b75b-de8bc64a4963)
+![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/ae6d85b7-304a-42e9-a51b-f8f65f260ff8)
 
 This diagram shows the interactions of the various parts of the RoadWarrior system at a very high level. It indicates the flow through the RoadWarrior application rather than define the individual containers which are specified in narrower diagrams below.
