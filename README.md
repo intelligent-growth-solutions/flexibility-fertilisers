@@ -89,6 +89,7 @@ To identify the main components of the Road Warrior, we looked at the main workf
     - System propagates new book and drip to data analytics
 
 - User received email about a new booking
+-   - User forwards email
     - System notices email
     - System retrieves further details about booking
     - System displays full booking details on UI
