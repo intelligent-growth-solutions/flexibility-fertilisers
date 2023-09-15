@@ -1,7 +1,7 @@
 # Road Warrior by Flexibility Fertilizers
 
 ## Requirements
-The architecture outlined below is based on the business case, requirements and user stories described [here](requirements/requirements-user-stories.md).
+The architecture outlined below is based on the business case, requirements and user stories described [here](./Requirements/requirements-user-stories.md).
 
 ## System Overview
 
@@ -68,7 +68,7 @@ The database technology that will be chosen needs to lend itself to horizontal s
 [Link to ADR here]()
 
 ## Next Steps
-While we have tried to keep the scope of the various systems quite narrow, there are a lot of requirements to cover that span a broad spectrum of technologies and engineering practices. There is a lot of front-end work, there asynchronous events to handle, email protocols, data analytics concepts etc.
+While we have tried to keep the scope of the various systems quite narrow, there are a lot of requirements to cover that span a broad spectrum of technologies and engineering practices. There is a lot of front-end work, asynchronous events to handle, email protocols, data analytics concepts etc.
 
 Instead of trying to build everything before making the system available, our recommendation would be to run a series of prototypes or perhaps a public alpha version that will help with getting real world feedback. This way we can measure if our predictions of architectural characteristics and business cases are correct without spending several months or years of development.
 
