@@ -1,5 +1,9 @@
 # flexibility-fertilisers
-A high level view of the various systems and personas involved in interacting with Road Warrior
+
+
+## Landscape
+
+The below gives a high level view of the various systems and personas involved in interacting with Road Warrior
 ![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/45a69004-776c-4852-965a-abd711428279)
 
 
@@ -86,14 +90,14 @@ To identify the main components of the Road Warrior system, we looked some of th
 
 From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we intestigate how the systems fit together and learn more about the use cases. 
 
-- Booking system - Deals with organisation of user bookings
+- Booking system - Handles users bookings and trips
 - Travel system - Handles the communication with the various external travel and booking systems
 - Email system - Entry point for User emails
 - User system - Handles user related information
 - Data analytics system - Handles processing of any user and travel data for data analytics
 
-
 ## Container Diagram
 ![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/ae6d85b7-304a-42e9-a51b-f8f65f260ff8)
 
 This diagram shows the interactions of the various parts of the RoadWarrior system at a very high level. It indicates the flow through the RoadWarrior application rather than define the individual containers which are specified in narrower diagrams below.
+
