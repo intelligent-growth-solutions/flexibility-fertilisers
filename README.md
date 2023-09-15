@@ -52,6 +52,9 @@ This diagram shows the interactions of the various parts of the RoadWarrior syst
 ## Critical Infrastructure
 We identified that availability, reliability and elasticity are specifically important to the alert system, travel system API and booking system. By ensuring these systems are design to withstand surges, users will be able to received notifications even during times of travel disruptions. 
 
+Other parts of the system such as the data analytics and social media integrations are not vital for keeping users up-to-date with ongoing travel issues.
+
+<<<Diagram here>>>
 
 The database technology that will be chosen needs to lend itself to horizontal scaling and distribution, as we require the data to be held in multiple data nodes.
 
