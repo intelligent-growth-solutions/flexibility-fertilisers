@@ -1,4 +1,4 @@
-# flexibility-fertilisers
+# Road Warrior by Flexibility Fertilizers
 
 ## Requirements
 The architecture described below is based on the requirements described in [Road Warrior Requirements and User Stories.md](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Road%20Warrior%20Requirements%20and%20User%20Stories.md)
