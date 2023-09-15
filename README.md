@@ -82,6 +82,9 @@ The following are characteristics that where considered relevant to the applicat
 
 To identify the main components of the Road Warrior, we looked at the main workflows the system needs to support.
 
+![Workflowsv2](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bc57a4cf-f925-473d-a336-7df2581d0551)
+
+
 - User adds a booking through UI
     - System retrieves further details for booking
     - System displays full booking details in UI
