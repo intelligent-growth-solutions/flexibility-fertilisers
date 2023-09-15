@@ -1,67 +1,12 @@
-# flexibility-fertilisers
+# Road Warrior by Flexibility Fertilizers
 
 ## Requirements
-The architecture described below is based on the requirements described in [Road Warrior Requirements and User Stories.md](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Road%20Warrior%20Requirements%20and%20User%20Stories.md)
+The architecture outlined below is based on the business case, requirements and user stories described [here](requirements/requirements-user-stories.md).
 
-## System overview
+## System Overview
 
 The below gives a high level view of the various systems and personas involved in interacting with Road Warrior
 ![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/45a69004-776c-4852-965a-abd711428279)
-
-
-```mermaid
-C4Context
-    title System Context diagram for RoadWarrior
-
-    Enterprise_Boundary(userBoundary, "User") {
-        System(email, "Email", "A user's email, some emails are from travel agents and can be imported into RoadWarrior")
-
-        Person(user, "User", "A road Warrior, with travel bookings")
-
-    }
-
-    Enterprise_Boundary(travelAgentBoundary, "Travel Agent") {
-
-        Person(travelAgentPerson, "Travel Agent", "Can be called in an emergency")
-
-        System(travelAgentSystem, "Travel Agent", "Retrieves information about the travel agent")
-    }
-
-    Enterprise_Boundary(RoadWarriorBoundary, "RoadWarrior") {
-
-        System(RoadWarrior, "RoadWarrior", "Allows customers to view, amend and cancel their travel bookings")
-    }
-
-    Enterprise_Boundary(dataCustomerBoundary, "Data Customer") {
-
-        System(dataCustomer, "Data Customer", "Retrieves data from RoadWarrior for money")
-    }
-
-    Enterprise_Boundary(socialMediaBoundary, "Social Media") {
-
-        System(socialMedia, "Social Media", "Booking information can be shared to social media")
-
-        Person_Ext(socialMediaFriend, "Friend", "Friends can see a user's booking information on social media")
-    }
-
-
-    Enterprise_Boundary(travelSystemBoundary, "Travel System") {
-
-        System(travelSystem, "Travel System")
-    }
-
-
-    Rel(RoadWarrior, email, "Gets emails from", "Email Provider API")
-    Rel(dataCustomer, RoadWarrior, "Retrieves analytical data", "RoadWarrior API")
-    Rel(user, RoadWarrior, "View, update, add and delete travel bookings")
-
-    BiRel(RoadWarrior, travelSystem, "Updates from either are reflected in the other")
-
-    Rel(RoadWarrior, travelAgentSystem, "Can call for help")
-
-    Rel(RoadWarrior, socialMedia, "Travel bookings can be shared to social media")
-```
-
 
 ## Architectural Characteristics
 
@@ -70,27 +15,28 @@ Following the requirements and additional context, we assessed different archite
 | Characteristic |  Notes |
 |--------|----|
 | Availability | The system has strict downtime requirements of a maximum of 5 minutes a month. This is especially important for parts of the system that handle adding or updating travel details. |
-| Reliability | The system must reliably add and update travel details. Missing updates could negatively impact the user's travel experience and have negative effects on user retention. |
+| Reliability | The system must reliably accept travel updates from external travel agents and notify the user. Missing updates could impact the user's travel experience and have negative effects on user retention. |
 | Elasticity  | Travel suffers from disruption in which case the system becomes even more important to its users wanting to keep on top of travel updates. In these instances, a surge in demand is expected and the system needs to be able to handle this gracefully and without impact to performance.
 | Extensibility | The system integrates with various 3rd party travel and booking systems. Evolving with existing interfaces and adding new ones will be crucial to providing users the best possible set of details about their trips.  |
-
 
 The following are characteristics that where considered relevant to the application but can be addressed through design and common practice.
 
 | Characteristic |  Notes |
 |--------|----|
-| Localization | The application should be available internationally, which helps us support availability through multiple deployment locations. Different languages can be made available through design. |
 | Installability | The system is accessible through a mobile app and website. To reach as many users as possible the app should be easy to install. This is well supported through different Application stores already.  |
 | Privacy  | The system handles peoples' travel information which is personal and sensitive data. Identifiable data must therefore be kept private while an anonymized version must be accessible for data analytics. |
 | Archivibility | The business model includes income to be derived from analytics run on user data. To make this successful, data needs to be retained and available to use for report creation. |
 
+## Architecture Style
+
+
 ## Workflows
 
-To identify the main components of the Road Warrior system, we looked some of the workflows it needs to support.
+To identify the main components of the Road Warrior system, we looked at some of the workflows it needs to support.
 
 ![Workflowsv2](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bc57a4cf-f925-473d-a336-7df2581d0551)
 
-From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we intestigate how the systems fit together and learn more about the use cases. 
+From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we investigate how the systems fit together and learn more about the use cases. 
 
 - Booking system - Handles users bookings and trips
 - Travel system - Handles the communication with the various external travel and booking systems
@@ -103,3 +49,11 @@ From the workflows we identified the following systems that we wanted to explore
 
 This diagram shows the interactions of the various parts of the RoadWarrior system at a very high level. It indicates the flow through the RoadWarrior application rather than define the individual containers which are specified in narrower diagrams below.
 
+## Next Steps
+While we have tried to keep the scope of the various systems quite narrow, there are a lot of requirements to cover that span a broad spectrum of technologies and engineering practices. There is a lot of front-end work, there asynchronous events to handle, email protocols, data analytics concepts etc.
+
+Instead of trying to build everything before making the system available, our recommendation would be to run a series of prototypes or perhaps a public alpha version that will help with getting real world feedback. This way we can measure if our predictions of architectural characteristics and business cases are correct without spending several months or years of development.
+
+![](./Misc/next-steps.png)
+
+A simplified version of Road Warrior can be tried out by internal staff or perhaps a select group of volunteers to get a sense of what is important during inputting trips and while traveling.
