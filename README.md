@@ -27,9 +27,6 @@ The following are characteristics that where considered relevant to the applicat
 | Privacy  | The system handles peoples' travel information which is personal and sensitive data. Identifiable data must therefore be kept private while an anonymized version must be accessible for data analytics. |
 | Archivibility | The business model includes income to be derived from analytics run on user data. To make this successful, data needs to be retained and available to use for report creation. |
 
-## Architecture Style
-
-
 ## Workflows
 
 To identify the main components of the Road Warrior system, we looked at some of the workflows it needs to support.
