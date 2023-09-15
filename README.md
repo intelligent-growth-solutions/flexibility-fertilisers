@@ -62,7 +62,7 @@ We identified that availability, reliability and elasticity are specifically imp
 
 Other parts of the system such as the data analytics and social media integrations are not vital for keeping users up-to-date with ongoing travel issues.
 
-<<<Diagram here>>>
+![](./Misc/2023-09-15-18-31-40.png)
 
 The database technology that will be chosen needs to lend itself to horizontal scaling and distribution, as we require the data to be held in multiple data nodes.
 
