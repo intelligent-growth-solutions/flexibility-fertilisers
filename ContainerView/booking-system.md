@@ -11,3 +11,51 @@ Once added, TravelSystemApi can tell the booking system when a booking has chang
 The user can manually modify a booking via ManualBookingModifier. The event from booking store in this case should indicate that an alert does not need to be sent as the user has made the change themselves.
 
 ![](2023-09-15-16-13-06.png)
+
+### Sequence Diagrams
+#### User manually adds a booking
+```mermaid
+
+sequenceDiagram
+    actor user as User
+
+    user->>BookingCreator: Add booking
+    BookingCreator->>TravelSystemApi: Verify and enrich booking
+    TravelSystemApi-->>BookingCreator: [verified]
+    BookingCreator->>BookingStore: Create booking
+    BookingStore-)EventBus: Publish booking created event
+    BookingStore-->>BookingCreator: [success]
+    BookingCreator-->>user: [success]
+```
+
+#### EmailGateway adds a booking
+```mermaid
+sequenceDiagram
+    emailGateway-)BookingCreator: Add booking
+    BookingCreator->>TravelSystemApi: Verify and enrich booking
+    TravelSystemApi-->>BookingCreator: [verified]
+    BookingCreator->>BookingStore: Create booking
+    BookingStore-)EventBus: Publish booking created event
+    BookingStore-->>BookingCreator: [success]
+
+```
+
+#### User manually modifies booking
+```mermaid
+sequenceDiagram
+    actor user as User
+
+    user->>ManualBookingModifier: Modify booking
+    ManualBookingModifier->>BookingStore: Modify existing booking
+    BookingStore-)EventBus: Publish Manually modified event
+    BookingStore-->>ManualBookingModifier: [success]
+    ManualBookingModifier-->>user: [success]
+```
+
+#### Travel System API modifies a booking
+```mermaid
+
+sequenceDiagram
+    TravelSystemApi-)BookingStore: Booking modified
+    BookingStore-)Alerting: Booking modified alert
+```
