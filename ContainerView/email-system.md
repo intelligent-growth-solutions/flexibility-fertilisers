@@ -6,4 +6,33 @@ An email is ingested by the system in the following ways:
 1. The user forwards an email to the email server. The email is then parsed and the booking stored in the booking system.
 2. The email is scraped from the user's specified email provider. All emails will be streamed into RoadWarrior and anything non-pertinent will be discarded.
 
+The EmailProviderKey store holds authentication credentials to access the user's email provider.
+
 ![](2023-09-15-16-15-50.png)
+
+### Sequence diagrams
+#### Email retrieved from EmailProvider
+```mermaid
+sequenceDiagram
+    EmailProvider-)EmailRetriever: Email received
+    EmailRetriever-)EmailFilter: email
+    break email not relevant
+        EmailFilter->>EmailFilter: discard email
+    end
+    EmailFilter-)EmailParser: email
+    EmailParser->>EmailParser: Get booking ID from email
+    break can't parse email
+        EmailParser->>EmailParser: end
+    end
+    EmailParser->>BookingSystem: Booking ID
+```
+\* if a booking confirmation email is detected but can't be parsed, do nothing
+
+#### Email forwarded to RoadWarrior by user
+```mermaid
+sequenceDiagram
+    actor user as User
+    user-)EmailServer: Forwards email
+    EmailServer-)EmailParser: email
+    EmailParser-)BookingSystem: Booking ID
+```
