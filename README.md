@@ -1,7 +1,7 @@
 # flexibility-fertilisers
 
 ## Requirements
-The architecture described below is based on the requirements described in [Road Warrior Requirements and User Stories.md](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Road%20Warrior%20Requirements%20and%20User%20Stories.md)
+The architecture outlined below is based on the business case, requirements and user stories described [here].(Road%20Warrior%20Requirements%20and%20User%20Stories.md)
 
 ## System overview
 
