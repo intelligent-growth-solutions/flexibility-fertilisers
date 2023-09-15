@@ -86,7 +86,7 @@ The following are characteristics that where considered relevant to the applicat
 
 ## Workflows
 
-To identify the main components of the Road Warrior system, we looked some of the workflows it needs to support.
+To identify the main components of the Road Warrior system, we looked at some of the workflows it needs to support.
 
 ![Workflowsv2](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bc57a4cf-f925-473d-a336-7df2581d0551)
 
