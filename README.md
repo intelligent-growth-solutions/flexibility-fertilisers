@@ -80,29 +80,18 @@ The following are characteristics that where considered relevant to the applicat
 
 ## Workflows
 
-To identify the main components of the Road Warrior, we looked at the main workflows the system needs to support.
+To identify the main components of the Road Warrior system, we looked some of the workflows it needs to support.
 
 ![Workflowsv2](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bc57a4cf-f925-473d-a336-7df2581d0551)
 
+From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we intestigate how the systems fit together and learn more about the use cases. 
 
-- User adds a booking through UI
-    - System retrieves further details for booking
-    - System displays full booking details in UI
-    - The user combines bookings into a trip
-    - System propagates new book and drip to data analytics
+- Booking system - Deals with organisation of user bookings
+- Travel system - Handles the communication with the various external travel and booking systems
+- Email system - Entry point for User emails
+- User system - Handles user related information
+- Data analytics system - Handles processing of any user and travel data for data analytics
 
-- User received email about a new booking
--   - User forwards email
-    - System notices email
-    - System retrieves further details about booking
-    - System displays full booking details on UI
-    - The user combines bookings into a trip
-    - System propagates new book and drip to data analytics
-
-- Flight is delayed
-    - System receives update about the flight change
-    - User is informed of change through UI
-    - Change is propagated to data analytics
 
 ## Container Diagram
 ![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/ae6d85b7-304a-42e9-a51b-f8f65f260ff8)
