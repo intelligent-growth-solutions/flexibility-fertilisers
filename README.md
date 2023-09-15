@@ -100,3 +100,6 @@ To identify the main components of the Road Warrior, we looked at the main workf
     - System receives update about the flight change
     - User is informed of change through UI
     - Change is propagated to data analytics
+ 
+## Container Diagram
+![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/2c509755-ec2b-415f-b75b-de8bc64a4963)
