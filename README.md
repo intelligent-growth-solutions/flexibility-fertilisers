@@ -19,7 +19,7 @@ C4Context
         Person(travelAgentPerson, "Travel Agent", "Can be called in an emergency")
 
         System(travelAgentSystem, "Travel Agent", "Retrieves information about the travel agent")
-    } 
+    }
 
     Enterprise_Boundary(RoadWarriorBoundary, "RoadWarrior") {
 
@@ -80,7 +80,7 @@ The following are characteristics that where considered relevant to the applicat
 
 ## Workflows
 
-To identify the main components of the Road Warrior, we looked at the main workflows the system needs to support. 
+To identify the main components of the Road Warrior, we looked at the main workflows the system needs to support.
 
 - User adds a booking through UI
     - System retrieves further details for booking
@@ -100,6 +100,8 @@ To identify the main components of the Road Warrior, we looked at the main workf
     - System receives update about the flight change
     - User is informed of change through UI
     - Change is propagated to data analytics
- 
+
 ## Container Diagram
 ![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/1071238/2c509755-ec2b-415f-b75b-de8bc64a4963)
+
+This diagram shows the interactions of the various parts of the RoadWarrior system at a very high level. It indicates the flow through the RoadWarrior application rather than define the individual containers which are specified in narrower diagrams below.
