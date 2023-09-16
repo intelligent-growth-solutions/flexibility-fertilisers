@@ -3,6 +3,8 @@ The PostCreator receives a request by the application to create a post. This is 
 
 ![](social-media.png)
 
+As described in this [ADR](../ADR/adr008-social-media.md), we only support sharing via the Road Warrior Mobile app.
+
 ### Sequence diagram
 #### User shares booking or trip
 ```mermaid
