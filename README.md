@@ -79,7 +79,7 @@ Other parts of the system such as the data analytics and social media integratio
 The database technology that will be chosen needs to lend itself to horizontal scaling and distribution, as we require the data to be held in multiple data nodes.
 
 ## Next Steps
-Part of a Software Architect's job is to leverage existing experience, analyze requirements and propose solutions based on mapping prior knowledge to a current problem. The world of software and software products however is ever changing and the main thing we can predict is that there will be unknowns along the way.
+Part of a Software Architect's job is to solve a current problem by leveraging prior knowledge and experience. The world of software and software products however is ever changing and the main thing we can predict is that there will be unknowns along the way.
 
 With that in mind, the other part of a Software Architect's role is to maintain a roadmap of milestones that balance cost, effort and feedback about the system.
 
