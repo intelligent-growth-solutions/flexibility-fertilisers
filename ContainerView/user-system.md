@@ -3,4 +3,4 @@ The user is authenticated using an external identity provider.
 
 The user's profile is stored to hold user's application preferences and information. E.g., name, email, phone number, notification preferences, etc.
 
-![](2023-09-15-16-17-58.png)
+![](user-system.png)
