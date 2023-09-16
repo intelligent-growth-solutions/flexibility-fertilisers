@@ -5,7 +5,7 @@ If an update is found it is reported back to the booking store and once updated,
 
 TravelSystemInterfaceFinder queries the travel system when a booking is added. This verifies the booking can be found in the travel system and allows for the booking to be enriched with more information that can't be derived from the booking number, e.g., seat number, departure times, etc.
 
-![](travel-system-api.png)
+![](<travel-system-api.png>)
 
 ### Sequence diagrams
 #### Booking added to booking system
