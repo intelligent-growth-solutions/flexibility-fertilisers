@@ -1,7 +1,7 @@
 # Road Warrior by Flexibility Fertilizers
 
 ## Requirements
-The architecture outlined below is based on the business case, requirements and user stories described [here](./Requirements/requirements-user-stories.md).
+The architecture outlined below is based on the business case, requirements and user stories described in more detail [here](./Requirements/requirements-user-stories.md).
 
 ## System Overview
 
