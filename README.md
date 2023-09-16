@@ -69,7 +69,7 @@ This diagram shows the interactions of the various parts of the Road Warrior sys
 1. [Social media](./ContainerView/social-media.md)
 1. [Users](./ContainerView/user-system.md)
 
-The sequence diagrams in the documents show the path through the system and also whether the request can be considered synchronous or asynchronous.
+The sequence diagrams in the documents show the path through the system and also whether the request can be considered synchronous or asynchronous. It is expected that the sequence diagrams will be more ephemeral than the container diagrams. As the system is implemented and interactions are explored further they will be expanded and modified.
 
 ## Critical Infrastructure
 We identified that availability, reliability and elasticity are specifically important to the alert system, travel system API and booking system. By ensuring these systems are design to withstand surges, users will be able to received notifications even during times of travel disruptions.
