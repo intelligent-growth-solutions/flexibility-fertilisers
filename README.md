@@ -48,13 +48,11 @@ From the workflows we identified the following components that we wanted to expl
 - Data analytics system - Handles processing of any user and travel data for data analytics
 
 ## Chosen architecture
-Based on the identified characteristics and workflows RoadWarrior will adopt a microservice architecture in combination with event-driven when asynchronous communication is required. By keeping services of our system discrete we can make our system tolerant to faults and spikes in traffic. For example, a service-oriented architecture may have multiple containers communicate with the same database. If one container's traffic spikes it could potentially bring that database down for other containers. Whereas a microservice architecture allows each container to function fully independently of other containers. 
+Based on the identified characteristics and workflows RoadWarrior will adopt a microservice architecture in combination with event-driven when asynchronous communication is required ([See ADR](./ADR/adr001-architecture-style.md)). By keeping services of our system discrete we can make our system tolerant to faults and spikes in traffic. For example, a service-oriented architecture may have multiple containers communicate with the same database. If one container's traffic spikes it could potentially bring that database down for other containers. Whereas a microservice architecture allows each container to function fully independently of other containers. 
 
 This is important to RoadWarrior because the system will have times of increased load and we will want to ensure some parts of the system, like alerting, are kept operational. 
 
-Care should be taken to ensure that a disproportionate amount of traffic does not go through one container. This would indicate a single point of failure and such containers may need broken up to distribute traffic. This increases our elasticity and fault tolerance. 
-
-[Adr](./ADR/adr001-architecture-style.md)
+Care should be taken to ensure that a disproportionate amount of traffic does not go through one container. This would indicate a single point of failure and such containers may need broken up to distribute traffic. This increases our elasticity and fault tolerance.
 
 ## Zooming into Road Warrior
 ![](./Misc/2023-09-15-22-55-31.png)
@@ -72,7 +70,7 @@ This diagram shows the interactions of the various parts of the Road Warrior sys
 The sequence diagrams in the documents show the path through the system and also whether the request can be considered synchronous or asynchronous. It is expected that the sequence diagrams will be more ephemeral than the container diagrams. As the system is implemented and interactions are explored further they will be expanded and modified.
 
 ## Critical Infrastructure
-We identified that availability, reliability and elasticity are specifically important to the alert system, travel system API and booking system. By ensuring these systems are design to withstand surges, users will be able to received notifications even during times of travel disruptions.
+We identified that availability, reliability and elasticity are specifically important to the alert system, travel system API and booking system (See [ADR](./ADR/adr009-critical-infrastructure.md)). By ensuring these systems are design to withstand surges, users will be able to received notifications even during times of travel disruptions.
 
 Other parts of the system such as the data analytics and social media integrations are not vital for keeping users up-to-date with ongoing travel issues.
 
