@@ -41,6 +41,15 @@ From the workflows we identified the following systems that we wanted to explore
 - User system - Handles user related information
 - Data analytics system - Handles processing of any user and travel data for data analytics
 
+## Chosen architecture
+Based on the identified characteristics and workflows RoadWarrior will adopt a microservice architecture in combination with event-driven when asynchronous communication is required. By keeping services of our system discrete we can make our system tolerant to faults and spikes in traffic. For example, a service-oriented architecture may have multiple containers communicate with the same database. If one container's traffic spikes it could potentially bring that database for other containers. Whereas a microservice architecture allows each container to function fully independently of other containers. 
+
+This is important to RoadWarrior because the system will have times of increased load and we will want to ensure some parts of the system, like alerting, are kept operational. 
+
+Care should be taken to ensure that a disproportionate amount of traffic does not go through one container. This would indicate a single point of failure and such containers may need broken up to distribute traffic. This increases our elasticity and fault tolerance. 
+
+[Adr](./ADR/adr001-architecture-style.md)
+
 ## Zooming into Road Warrior
 ![](./Misc/2023-09-15-22-55-31.png)
 
