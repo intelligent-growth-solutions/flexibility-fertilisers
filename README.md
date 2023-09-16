@@ -29,11 +29,17 @@ The following are characteristics that where considered relevant to the applicat
 
 ## Workflows
 
-To identify the main components of the Road Warrior system, we looked at some of the workflows it needs to support.
+To identify the main components of the Road Warrior system, we looked at some of the main workflows it needs to support. Key roles that interact in these workflows are:
 
-![Workflowsv2](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bc57a4cf-f925-473d-a336-7df2581d0551)
+- **User** - The traveler interacting with the mobile or web app. They are interested in recording their bookings and keeping on top of their trips, before or during their travels. 
+- **Travel systems** - A rich set of API Interfaces to external travel agencies and booking systems. These external systems host further details linked to booking codes. They are also aware of updates made to bookings as well as changes to itineraries caused by, for example, travel disruptions.
+- **Social Media** - External systems allowing a user to connect to others and share their travel itineraries with them.
 
-From the workflows we identified the following systems that we wanted to explore further. We may discover the need for more as we investigate how the systems fit together and learn more about the use cases.
+
+![Workflowsv2](./Misc/workflows.png)
+
+
+From the workflows we identified the following components that we wanted to explore further. We may discover the need for more as we investigate how they fit together and learn more about the use cases.
 
 - Booking system - Handles users bookings and trips
 - Travel system - Handles the communication with the various external travel and booking systems
