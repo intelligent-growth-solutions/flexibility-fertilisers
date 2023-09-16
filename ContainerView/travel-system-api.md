@@ -6,3 +6,24 @@ If an update is found it is reported back to the booking store and once updated,
 TravelSystemInterfaceFinder queries the travel system when a booking is added. This verifies the booking can be found in the travel system and allows for the booking to be enriched with more information that can't be derived from the booking number, e.g., seat number, departure times, etc.
 
 ![](2023-09-15-16-14-56.png)
+
+### Sequence diagrams
+#### Booking added to booking system
+```mermaid
+sequenceDiagram
+    BookingSystem->>TravelSystemInterfaceFinder: New booking
+    TravelSystemInterfaceFinder->>TravelSystemInterfaceFinder: Find API
+    TravelSystemInterfaceFinder->>TravelSystem: booking ID
+    TravelSystem-->>TravelSystemInterfaceFinder: Enriched booking
+    TravelSystemInterfaceFinder-->>BookingSystem: Enriched booking
+```
+
+#### Update from travel system
+```mermaid
+sequenceDiagram
+    TravelSystemPoller->>TravelSystem: Check for updates
+    opt When booking update available
+        TravelSystem-->>TravelSystemPoller: Booking update
+        TravelSystemPoller-)BookingSystem: Booking update
+    end
+```
