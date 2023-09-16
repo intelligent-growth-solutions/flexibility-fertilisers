@@ -8,7 +8,7 @@ An email is ingested by the system in the following ways:
 
 The EmailProviderKey store holds authentication credentials to access the user's email provider.
 
-![](2023-09-15-16-15-50.png)
+
 
 ### Sequence diagrams
 #### Email retrieved from EmailProvider
