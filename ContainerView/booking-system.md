@@ -10,7 +10,7 @@ Once added, TravelSystemApi can tell the booking system when a booking has chang
 
 The user can manually modify a booking via ManualBookingModifier. The event from booking store in this case should indicate that an alert does not need to be sent as the user has made the change themselves.
 
-![](2023-09-15-16-13-06.png)
+![](<booking-system.png>)
 
 ### Sequence Diagrams
 #### User manually adds a booking
