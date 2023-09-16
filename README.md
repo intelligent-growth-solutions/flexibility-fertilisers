@@ -80,8 +80,6 @@ Other parts of the system such as the data analytics and social media integratio
 
 The database technology that will be chosen needs to lend itself to horizontal scaling and distribution, as we require the data to be held in multiple data nodes.
 
-[Link to ADR here]()
-
 ## Next Steps
 While we have tried to keep the scope of the various systems quite narrow, there are a lot of requirements to cover that span a broad spectrum of technologies and engineering practices. There is a lot of front-end work, asynchronous events to handle, email protocols, data analytics concepts etc.
 
