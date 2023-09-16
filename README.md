@@ -6,7 +6,7 @@ The architecture outlined below is based on the business case, requirements and 
 ## System Overview
 
 The below gives a high level view of the various systems and personas involved in interacting with Road Warrior
-![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/45a69004-776c-4852-965a-abd711428279)
+![](./Misc/2023-09-16-16-24-54.png)
 
 ## Architectural Characteristics
 
