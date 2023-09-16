@@ -11,3 +11,4 @@ Viewing bookings and receiving travel alerts have been as the main user journeys
 # Consequences
 - We guarantee the essentials for completing a trip are available to users and meet the business' uptime goal.
 - We are not overspending time and budget on areas of the Road Warrior where downtime is not preventing users from using the app effectively long-term.
+- We considered whether a caching layer will be effective in removing the need to have elastic and scalable databases. While caching is effective for returning results quickly, it will come with questions about scaling itself. Ultimately we are not trying to speed up the process of retrieving bookings but rather to guarantee uptime. Therefor, we will use a database technology and cloud service that handle horizontal scaling and elasticity by design. 
