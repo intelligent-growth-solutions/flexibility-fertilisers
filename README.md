@@ -48,7 +48,7 @@ From the workflows we identified the following components that we wanted to expl
 - Data analytics system - Handles processing of any user and travel data for data analytics
 
 ## Chosen architecture
-Based on the identified characteristics and workflows RoadWarrior will adopt a microservice architecture in combination with event-driven when asynchronous communication is required. By keeping services of our system discrete we can make our system tolerant to faults and spikes in traffic. For example, a service-oriented architecture may have multiple containers communicate with the same database. If one container's traffic spikes it could potentially bring that database for other containers. Whereas a microservice architecture allows each container to function fully independently of other containers. 
+Based on the identified characteristics and workflows RoadWarrior will adopt a microservice architecture in combination with event-driven when asynchronous communication is required. By keeping services of our system discrete we can make our system tolerant to faults and spikes in traffic. For example, a service-oriented architecture may have multiple containers communicate with the same database. If one container's traffic spikes it could potentially bring that database down for other containers. Whereas a microservice architecture allows each container to function fully independently of other containers. 
 
 This is important to RoadWarrior because the system will have times of increased load and we will want to ensure some parts of the system, like alerting, are kept operational. 
 
