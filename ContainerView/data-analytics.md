@@ -8,7 +8,7 @@ The data lake holds all the aggregate and anonymized data that RoadWarrior sells
 
 The reports store is added to whenever there is an event published that indicates a booking has been modified.
 
-![](2023-09-15-16-17-29.png)
+![](<data-analytics.png>)
 
 ### Sequence Diagrams
 #### Store booking event in data lake
