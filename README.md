@@ -1,7 +1,21 @@
 # Road Warrior by Flexibility Fertilizers
 ## Table of Contents
-[Requirements](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#requirements)
-[System Overview](system-overview)
+1. [Requirements](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#requirements)
+    
+1. [System Overview](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#system-overview)
+    
+1. [Architectural Characteristics](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#architectural-characteristics)
+    
+1. [Workflows](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#workflows)
+    
+1. [Chosen Architecture](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#chosen-architecture)
+    
+1. [Zooming In](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#zooming-into-road-warrior)
+    
+1. [Critical Infrastructure](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#critical-infrastructure)
+    
+1. [Next Steps](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#next-steps)
+
 
 
 ## Requirements
