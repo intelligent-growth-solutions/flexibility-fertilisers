@@ -19,7 +19,12 @@
 
 
 ## Requirements
-The architecture outlined below is based on the business case, requirements and user stories described in more detail [here](./Requirements/requirements-user-stories.md).
+The architecture outlined below is based on [this document](./Requirements/requirements-user-stories.md). This document includes:
+- the business case and problem statement
+- assumptions and non-functional requirements
+- a list of user stories for the 3 primary actors
+- high level context scenarios
+
 
 ## System Overview
 
