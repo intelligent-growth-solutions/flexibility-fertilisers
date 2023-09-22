@@ -1,4 +1,10 @@
-
+# Table of Contents
+1. [Introduction](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Requirements/requirements-user-stories.md#introduction)  
+1. [Business Case](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Requirements/requirements-user-stories.md#business-case)
+1. [Assumptions](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Requirements/requirements-user-stories.md#assumptions)
+1. [User Stories](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Requirements/requirements-user-stories.md#user-stories)
+1. [High Level Scenarios](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/blob/main/Requirements/requirements-user-stories.md#straw-man-use-cases)
+   
 # Introduction
 Do you travel frequently? Do you book stays, flights, cars, buses and trains? Are you frustrated by trying to keep track of all of your travel arrangements by sifting through your email and the different travel providers’ apps? 
 The Road Warrior offers a single point of truth for all your travel arrangements. Hotels, cars, flights, trains, buses, all arranged into a simple trip-centred interface.
