@@ -1,7 +1,7 @@
 # Road Warrior by Flexibility Fertilizers
 ## Table of Contents
-**[Requirements](requirements)**
-**[System Overview](system-overview)**
+[Requirements](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#requirements)
+[System Overview](system-overview)
 
 
 ## Requirements
