@@ -62,7 +62,7 @@ As a preferred travel agent, I want all of The Road Warrior’s travel informati
 ## The Data Team
 As a data scientist, I want to run queries against The Road Warrior’s data to find travel trends. For example
 -	What routes are people traveling for key destinations?
--	
+
 How often are our customers having their travel disrupted? Where are the most common disruptions? What do people do when their travel is disrupted? How can we monetise this?
 
 # Straw Man Use Cases
