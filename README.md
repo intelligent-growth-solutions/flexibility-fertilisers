@@ -29,7 +29,7 @@ The architecture outlined below is based on [this document](./Requirements/requi
 ## System Overview
 
 The below gives a high level view of the various systems and personas involved in interacting with Road Warrior
-![](./Misc/2023-09-16-16-24-54.png)
+![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/f6dbe740-361d-4433-8c4c-719f42a9cd76)
 
 ## Architectural Characteristics
 
