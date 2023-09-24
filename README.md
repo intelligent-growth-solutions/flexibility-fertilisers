@@ -16,6 +16,7 @@
     
 1. [Next Steps](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#next-steps)
 
+1. [ADRs](#adrs)
 
 
 ## Requirements
@@ -114,3 +115,15 @@ Instead of trying to build everything before making the system available, our re
 ![](./Misc/next-steps.png)
 
 A simplified version of Road Warrior can be tried out by internal staff or perhaps a select group of volunteers to get a sense of what is important during inputting trips and while traveling.
+
+## ADRs
+
+- [Architecture style](./ADR/adr001-architecture-style.md) - Use Microservices
+- [Trip creator scope](./ADR/adr002-trip-creator-scope.md) - Trip creation is manual
+- [Archiving data for analytics](./ADR/adr003-archiving-data-for-analytics.md) - Use asynchronous communication
+- [Email retrieval](./ADR/adr004-email-retrieval.md) - Emails are forwarded or scraped
+- [Travel System API](./ADR/adr005-travel-system-api.md) - Abstract away travel API
+- [Trip reporting](./ADR/adr006-reporting.md) - Reporting is part of data analytics
+- [Identity Provider](./ADR/adr007-identity-provider.md) - Use an external identity provider
+- [Social media](/ADR/adr008-social-media.md) - Use mobile phone sharing capabilities
+- [Critical infrastructure](./ADR/adr009-critical-infrastructure.md) - Booking and Alerting
