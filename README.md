@@ -80,7 +80,7 @@ This is important to RoadWarrior because the system will have times of increased
 Care should be taken to ensure that a disproportionate amount of traffic does not go through one container. This would indicate a single point of failure and such containers may need broken up to distribute traffic. This increases our elasticity and fault tolerance.
 
 ## Zooming into Road Warrior
-![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/1dbad5f7-a90c-4b8b-bfa0-4d90c9dae238)
+![image](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/2922498/cd4cb760-6a08-45d3-b1c0-794e8dcc8cc8)
 
 This diagram shows the interactions of the various parts of the Road Warrior system at a high level. It indicates the flow through the Road Warrior application rather than define the individual containers which are explored individually below:
 
