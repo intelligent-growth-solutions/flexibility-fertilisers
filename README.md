@@ -50,7 +50,7 @@ The following are characteristics that where considered relevant to the applicat
 |--------|----|
 | Installability | The system is accessible through a mobile app and website. To reach as many users as possible the app should be easy to install. This is well supported through different Application stores already.  |
 | Privacy  | The system handles peoples' travel information which is personal and sensitive data. Identifiable data must therefore be kept private while an anonymized version must be accessible for data analytics. |
-| Archivibility | The business model includes income to be derived from analytics run on user data. To make this successful, data needs to be retained and available to use for report creation. |
+| Archivability | The business model includes income to be derived from analytics run on user data. To make this successful, data needs to be retained and available to use for report creation. |
 
 ## Workflows
 
