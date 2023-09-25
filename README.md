@@ -1,4 +1,7 @@
 # Road Warrior by Flexibility Fertilizers
+
+Link to recording - [https://vimeo.com/868085561](https://vimeo.com/868085561)
+
 ## Table of Contents
 1. [Requirements](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/tree/main#requirements)
     
