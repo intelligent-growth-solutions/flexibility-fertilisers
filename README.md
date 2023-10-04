@@ -1,3 +1,6 @@
+![484950_Katas_Place_Badge_Third (002)](https://github.com/intelligent-growth-solutions/flexibility-fertilisers/assets/104081505/bd6289c3-73da-4400-b26f-45ca38b1014f)
+
+
 # Road Warrior by Flexibility Fertilizers
 
 Link to recording - [https://vimeo.com/868085561](https://vimeo.com/868085561)
