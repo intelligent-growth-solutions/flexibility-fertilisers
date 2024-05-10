@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: Flexibility Fertilisers
+  description: O'Reilly Architectural Katas competition
+  x-cortex-git:
+    github:
+      repository: intelligent-growth-solutions/flexibility-fertilisers
+  x-cortex-tag: flexibility-fertilisers
+  x-cortex-type: poc
+  x-cortex-owners:
+    - type: group
+      name: intelligent-growth-solutions/user-apps
+      provider: GITHUB
